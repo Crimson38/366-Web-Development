@@ -1,0 +1,177 @@
+/*
+    Author: Drew Walizer 
+    Date: 3/25/20
+    Course: 366 
+*/
+
+body {
+    background-image: url(http://cs.millersville.edu/~sschwartz/366/HTML_CSS_Lab/Images/background.png);
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* The very top banner */
+#banner {
+    background-image: url(http://cs.millersville.edu/~sschwartz/366/HTML_CSS_Lab/Images/bannerbg.png);
+    text-align: center;
+    height: 50px;
+    background-repeat: repeat-x;
+}
+
+/* The TMNT (2007) Heading */
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: rgb(153, 153, 153) 3px 3px;
+}
+
+/* The center main content area */
+#content {
+    width: 800px;
+    margin: auto;
+    border-width: 4px;
+    border-style: solid;
+    border-color: grey;
+    border-image: initial;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* The right side of the content area 
+    with the tmnt pic and general info */
+#right {
+    float: right;
+    clear: both;
+    width: 250px;
+    background-color: rgb(162, 185, 100);
+    border-top-right-radius: 16px;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+}
+
+/* general info area */
+#right dl {
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+/* Every individual general info block about the movie */
+.term {
+    padding-bottom: 5pt;
+    padding-top: 5pt;
+}
+
+/* Each general info term */
+#right dt {
+    font-weight: bold;
+    
+}
+/* Everything under each general info term */
+#right dd {
+    margin-left: 20pt;
+}
+
+/* Links */
+#links {
+    list-style-type: none;
+    padding: 0pt;
+    margin: 0px;
+}
+
+/* Left area of content with reviews and banner */ 
+#left {
+    width: 550px;
+    overflow: hidden;
+}
+
+/* Left top banner in content area */
+#left-top {
+    background-image: url(http://cs.millersville.edu/~sschwartz/366/HTML_CSS_Lab/Images/rbg.png);
+    height: 83px;
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+    width: 550px;
+    overflow: hidden;
+}
+
+/* Left top banner image */
+#left-top  img {
+    float: left;
+    overflow: hidden;
+}
+
+/* Left review column */
+#left-col {
+    width: 47%;
+    float: left;
+    margin-left: 2%;
+}
+
+/* Right review column */
+#right-col {
+    width: 47%;
+    float: right;
+    margin-right: 2%;
+}
+
+/* Each review block */
+.review { 
+    margin-bottom: 20pt;
+}
+
+/* All images with in each review block */
+.review img {
+    float: left;
+    clear: both;
+    padding-right: 5px;
+}
+
+/* review quote of review */
+.review-quote {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: rgb(232, 220, 155);
+    border-width: 2px;
+    border-style: solid;
+    border-color: grey;
+    border-image: initial;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+/* reviewer part of review */
+.reviewer {
+    font-style: italic;
+    overflow: hidden;
+}
+
+/* very bottom of content area */
+#bottom {
+    background-color: rgb(162, 185, 100);
+    text-align: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    clear: both;
+    padding: 5px;
+}
+
+/* html and css validators */
+#validators {
+    float: right;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 2px;
+}
+
+/* html and css validator images */
+#validators img {
+    margin: 1px;
+}
