@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css">
+    <script src="https://kit.fontawesome.com/fb433a8e81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper2">
+    <header>    
+      <div class="book-image">
+      </div>
+    </header>
+    <div class = "login-reg-wrapper">
+      <form action="/login-server" method="post">
+        <h1>Login</h1>
+        <div>
+          <label>Username:</label>
+          <input type="text" name="username" class="user-info"/>
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" name="password" class="user-info"/>
+        </div>
+        <div>
+          <input class="submit-btn" type="submit" value="Submit" required />
+        </div>
+        <h4>No Account? Register <a href = '/register'>here</a></h4>
+      </form> 
+    </div>
+  </div>
+</body>
+</html>

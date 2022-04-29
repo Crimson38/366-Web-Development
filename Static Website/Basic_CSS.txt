@@ -1,0 +1,6 @@
+header, footer {background-color: #9BC1C2;}
+body {background-color: #F5F5F5; color: #3F2860}
+nav {text-align: center;} 
+nav a {font-weight: bold; text-decoration: none}
+footer {text-align:center}
+.hdmr {color: #ABCDFF}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css">
+    <script src="https://kit.fontawesome.com/fb433a8e81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper2">
+    <header>    
+      <div class="book-image">
+      </div>
+    </header>
+  <div class="login-reg-wrapper">
+        <!-- must have username, first/last name, email, zip code, password -->
+    <form action="/register-server" method="post">
+      <h1>Register</h1>
+      <div>
+        <label>Username:</label>
+        <input type="text" name="username" class="user-info"/>
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password" class="user-info"/>
+      </div>
+      <div>
+        <label>First Name:</label>
+        <input type="text" name="fname" class="user-info"/>
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input type="text" name="lname" class="user-info"/>
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" name="email" class="user-info"/>
+      </div>
+      <div>
+        <label>Zip Code:</label>
+        <input type="text" name="zipcode" class="user-info"/>
+      </div>
+       <div>
+        <input class="submit-btn" type="submit" value="Submit" required />
+      </div>
+    </form>
+  </div>
+  </div>
+</body>
+</html>
+

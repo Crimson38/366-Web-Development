@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css">
+    <script src="https://kit.fontawesome.com/fb433a8e81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="bookSelection"></div>
+    <div class="wrapper">
+        <header>
+          <div class="logout">
+            <span class="header-icons">
+              <a class="logout-link" href="/logout">
+                <i class="fas fa-arrow-left fa-2x"></i>
+              </a>
+            </span>
+          </div>
+          <div class="book-image">
+          </div>
+          <div class="cart">
+            <span class="header-icons">
+              <i class="fas fa-shopping-cart fa-2x"></i>
+              <div id="cart-circle">0</div>
+            </span>
+          </div>
+        </header>
+        <nav>
+
+        </nav>
+        <main>
+            <h1>Welcome <%=fname%></h1>
+            <div id="searchWrapper">
+              <input 
+                type="text"
+                name="searchBar"
+                id="searchBar"
+                placeholder="search for a character" 
+              />
+              <i class="fas fa-search"></i>
+            </div>
+
+            <div id="book_area">
+
+            </div>
+
+            <div class="cart-overlay">
+              <div class = "cart-window">
+                <span class="close-cart">
+                  <i class="fas fa-window-close"></i>
+                </span>
+                <h2> Your Cart </h2>
+                <div class="cart-content">
+                  Cart Items
+                  
+                </div>
+                <div class="cart-footer">
+                  <h3> Your Total : $<span class="cart-total">0</span></h3>
+                  <button class="clear-cart">Clear Cart</button>
+                  <br>
+                  <br>
+                  <button class="place-order">Place an Order</button>
+                </div>  
+              </div>  
+            </div>
+
+            <div class="order-overlay">
+              <div class="order-window">
+                <span class="close-order">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2> Payment Information </h2>
+                <form action="/payment-server" method="post" class="order-form">
+                  <div>
+                    <label>Select Payment Method:</label>
+                    <select name="paymentMethod" class="payment-info" required>
+                      <option>PayPal</option>
+                      <option>Visa</option>
+                      <option>MasterCard</option>
+                      <option>American Express</option>
+                      <option>Discover</option>
+                      <option>JCB</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>Card Number:</label>
+                    <input type="text" name="cardNum" class="payment-info" required/>
+                  </div>
+                  <div>
+                    <label>Expiration Date:</label>
+                    <input type="month" name="expiration" class="payment-info" required/>
+                  </div>
+                  <div>
+                    <label>Security Code:</label>
+                    <input type="text" name="securityCode" class="payment-info" maxlength="3" required/>
+                  </div>
+                  <div>
+                    <label>Billing Address:</label>
+                    <input type="text" name="address" class="payment-info" required/>
+                  </div>
+                  <div>
+                    <label>City:</label>
+                    <input type="text" name="city" class="payment-info" required/>
+                  </div>
+                  <div>
+                    <label>State:</label>
+                    <select id="state" name="state" class="payment-info" required>
+                      <option value="Alabama">Alabama</option>
+                      <option value="Alaska">Alaska</option>
+                      <option value="Arizona">Arizona</option>
+                      <option value="Arkansas">Arkansas</option>
+                      <option value="California">California</option>
+                      <option value="Colorado">Colorado</option>
+                      <option value="Connecticut">Connecticut</option>
+                      <option value="Delaware">Delaware</option>
+                      <option value="Florida">Florida</option>
+                      <option value="Georgia">Georgia</option>
+                      <option value="Hawaii">Hawaii</option>
+                      <option value="Idaho">Idaho</option>
+                      <option value="Illinois">Illinois</option>
+                      <option value="Indiana">Indiana</option>
+                      <option value="Iowa">Iowa</option>
+                      <option value="Kansas">Kansas</option>
+                      <option value="Kentucky">Kentucky</option>
+                      <option value="Louisiana">Louisiana</option>
+                      <option value="Maine">Maine</option>
+                      <option value="Maryland">Maryland</option>
+                      <option value="Massachusetts">Massachusetts</option>
+                      <option value="Michigan">Michigan</option>
+                      <option value="Minnesota">Minnesota</option>
+                      <option value="Mississippi">Mississippi</option>
+                      <option value="Missouri">Missouri</option
+                      ><option value="Montana">Montana</option>
+                      <option value="Nebraska">Nebraska</option>
+                      <option value="Nevada">Nevada</option>
+                      <option value="New Hampshire">New Hampshire</option>
+                      <option value="New Jersey">New Jersey</option>
+                      <option value="New Mexico">New Mexico</option>
+                      <option value="New York">New York</option>
+                      <option value="North Carolina">North Carolina</option>
+                      <option value="North Dakota">North Dakota</option>
+                      <option value="Ohio">Ohio</option>
+                      <option value="Oklahoma">Oklahoma</option>
+                      <option value="Oregon">Oregon</option>
+                      <option value="Pennsylvania">Pennsylvania</option>
+                      <option value="Rhode Island">Rhode Island</option>
+                      <option value="South Carolina">South Carolina</option>
+                      <option value="South Dakota">South Dakota</option>
+                      <option value="Tennessee">Tennessee</option>
+                      <option value="Texas">Texas</option>
+                      <option value="Utah">Utah</option>
+                      <option value="Vermont">Vermont</option>
+                      <option value="Virginia">Virginia</option>
+                      <option value="Washington">Washington</option>
+                      <option value="West Virginia">West Virginia</option>
+                      <option value="Wisconsin">Wisconsin</option>
+                      <option value="Wyoming">Wyoming</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label>Zipcode:</label>
+                    <input type="text" name="zipcode" class="payment-info" required/>
+                  </div>
+                  <div>
+                    <label>Phone Number:</label>
+                    <input type="text" name="phone-number" class="payment-info" placeholder="123-456-789" 
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
+                  </div>
+                  <div class="localStorageInfo">
+                  </div>
+                  <div class="submit-order">
+                    <input class="submit-btn" type="submit" value="Submit" required />
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+        </main>
+
+        <footer>
+            <p>Book Store</p>
+        </footer>
+    </div>
+    <script src="/js"></script>
+</body>
+</html>

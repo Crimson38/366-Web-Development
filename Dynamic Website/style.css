@@ -1,0 +1,183 @@
+
+body {
+    background-color: rgba(0, 0, 0, 0.877);
+    background-repeat: no-repeat;
+    
+}
+
+#wrapper {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(to bottom, rgb(70, 221, 214), rgb(34, 86, 110));
+   
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(150, 233, 229);
+   
+}
+
+
+#scoreboard {
+    margin: auto;
+    width: 150px;
+    height: 120px;
+    border: 3px solid black;
+    border-radius: 50% 10% / 25%;
+    margin-bottom: 1em;
+    font-size: 56px;
+    text-align: center;
+    background-color: rgb(150, 233, 229);
+}
+
+#result {
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+
+}
+
+.label {
+    position: relative;
+    background-color: rgb(150, 233, 229);
+    width: 40px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+#user-label {
+    right: 25px;
+    top: 60px;
+}
+
+#cpu-label {
+    left: 135px;
+    top: 25px
+}
+
+#reset {
+    top: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+#parent-div{
+    text-align: center;
+}
+
+#choices {
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    margin-bottom: 50px;  
+  }
+  
+  #top-image, #mid-images, #bot-images {
+    width: 600px; 
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+  
+  #rock {
+      width: 50%;
+      margin: auto;
+      height: 200px;
+      background-size: 200px 200px;
+      background-image: url("images/rock.png");
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  
+  #mid-images{ 
+      background-size: 200px 200px;
+  }
+  
+  
+  
+  #spock {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+      background-image: url("images/spock.jpg");
+      display:inline-block;
+      background-repeat:no-repeat;
+      margin-right:95px;  
+  }
+  
+  #paper {
+      
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+      background-image: url("images/paper.png");
+      display:inline-block;
+      background-repeat:no-repeat;
+      background-position: right;
+      margin-left: 100px;
+  }
+  
+  #bot-images{ 
+      background-size: 200px 200px;
+      width: 450px;
+      height: 200px;
+      margin: auto;
+  }
+  
+  
+  #lizard {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+      background-image: url("images/lizard.png");
+      display:inline-block;
+      background-repeat:no-repeat;
+      background-position: left;
+  }
+  
+  #scissor {
+      width: 200px;
+      height: 200px;
+      background-size: 200px 200px;
+      background-image: url("images/scissor.png");
+      display:inline-block;
+      background-repeat:no-repeat;
+      background-position: right;
+      margin-left: 45px;
+  }
+
+#rules {
+    float:left;
+    width: 200px;
+    height: 300px;
+    clear: right;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid black;
+    border-radius: 20%/20%;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-color: rgb(150, 233, 229);
+    box-shadow: 5px 5px ;
+    text-align: left;
+}
+
+
+h4 {
+    text-align: center
+  }
+
+  
+li {
+    padding: 5px;
+  }
+  
+ 
+
+footer {
+    margin: auto;
+    text-align: center;
+    background-color: rgb(150, 233, 229);
+}
